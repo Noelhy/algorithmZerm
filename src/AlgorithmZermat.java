@@ -12,7 +12,7 @@ public class AlgorithmZermat {
 		int res = 0;
 		int res2 = 0;
 		String vD = "";
-		String stringPrefijo1 = "";
+		String stringVd = "";
 
 		if (isNumeric(reference)) {
 			if (reference.length() > 10) {
@@ -22,7 +22,7 @@ public class AlgorithmZermat {
 				vD = reference.charAt(9) + "";
 				reference = reference.substring(0, 9);
 			} else if (reference.length() == 10) {
-				stringPrefijo1 = reference.substring(Math.max(0, reference.length() - 1));
+				stringVd = reference.substring(Math.max(0, reference.length() - 1));
 				reference = reference.substring(0, reference.length() - 1);
 			}
 
@@ -70,7 +70,7 @@ public class AlgorithmZermat {
 
 			Boolean isValid = false;
 			// System.out.println("Digito test: " + strDigitVerify);
-			if (strDigitVerify.equals(stringPrefijo1) || strDigitVerify.equals(vD)) {
+			if (strDigitVerify.equals(stringVd) || strDigitVerify.equals(vD)) {
 				isValid = true;
 			}
 

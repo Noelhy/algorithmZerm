@@ -2,7 +2,7 @@
 public class main {
 
 	public static void main(String[] args) {
-		String reference = "20582CL"; 
+		String reference = "20582CL4"; 
 		AlgorithmZermat s= new  AlgorithmZermat();
 		System.out.println("The reference is: "+ s.processZermat(reference));
 	}
